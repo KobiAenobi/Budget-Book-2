@@ -1,6 +1,6 @@
 # Budget Book 
 
-So, Story Time. I spent around ₹6000 in a week, and I had no idea where it went. So I decided to track my budget from now on, BUT turns out it's a hassle using the 'Notes App', and other apps, as they are not "automatic" enough.
+So, Story Time, I spent around ₹6000 in a week, and I had no idea where it went. So I decided to track my budget from now on, BUT turns out it's a hassle using the 'Notes App', and other apps, as they are not "automatic" enough.
 So here comes the idea:
 
 An Android app for budget management that works with Google Pay.
