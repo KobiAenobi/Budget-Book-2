@@ -17,5 +17,5 @@ Now, sadly, if you want the automatic functionality, you have to jump through so
 You have to ADB sideload the APK file using Android Platform Tools(YouTube's your guy).
 no way around it, at least not that I know of.
 
-If you just want to use the basic budget management app, you can install it by disabling Play Protect for a sec. 
+If you just want to use the basic budget management functionality, you can install it by disabling Play Protect for a sec. 
 But then that's not really the point of the app, but it's still a cool app.
