@@ -11,3 +11,10 @@ This app pops up an overlay bubble after a transaction, and all you have to do i
 
 
 ## Getting Started
+
+Now, sadly, if you want the automatic functionality, you have to jump through some hoops. Because the app uses accessibility settings for automatic detection of transaction completion and Lord Google doesn't like that, so:
+You have to ADB sideload the APK file using Android Platform Tools.
+no way around it, at least not that I know of.
+
+If you just want to use the basic budget management app, you can install it by disabling Play Protect for a sec. 
+But then that's not really the point of the app, but it's still a cool app.
