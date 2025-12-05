@@ -20,7 +20,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.kobi.budget_book_test_version"
+        applicationId = "com.kobi.budget_book"
         minSdk = 26
 
         targetSdk = flutter.targetSdkVersion

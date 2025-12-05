@@ -24,7 +24,7 @@
          - Do NOT remove android:name if you rely on that pre-initialized engine.
     -->
     <application
-    android:label="Budget Test"
+    android:label="Budget Book"
     android:name=".MyApplication"
     android:icon="@mipmap/ic_launcher">
 

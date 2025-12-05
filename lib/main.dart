@@ -165,7 +165,7 @@ Future<void> main() async {
 Future<String> getExternalHivePath() async {
   // final dir = await getExternalStorageDirectory(); 
   // /storage/emulated/0/Android/data/<package>/files
-  final hiveDir = Directory("/storage/emulated/0/Android/media/com.kobi.budget_book_test_version/hive");
+  final hiveDir = Directory("/storage/emulated/0/Android/media/com.kobi.budget_book/hive");
 
   if (!hiveDir.existsSync()) {
     hiveDir.createSync(recursive: true);
