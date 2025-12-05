@@ -12,7 +12,7 @@ This app pops up an overlay bubble after a transaction, and all you have to do i
 
 ## Getting Started
 
-Now, sadly, if you want the automatic functionality, you have to jump through some hoops. Because the app uses accessibility settings for automatic detection of transaction completion and Lord Google doesn't like that, so:
+Now, sadly, if you want the automatic functionality, you have to jump through some hoops. Because the app uses accessibility settings for automatic detection of transaction completion and Lord Google doesn't like that, So:
 You have to ADB sideload the APK file using Android Platform Tools.
 no way around it, at least not that I know of.
 
