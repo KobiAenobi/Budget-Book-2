@@ -1,4 +1,5 @@
 import 'package:budget_book_app/models/budget_item.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 
@@ -98,5 +99,29 @@ class Api {
     if (pct < 50) return "chill";
     if (pct < 80) return "warning";
     return "stressed";
+  }
+
+
+  //group by months
+
+  static Map<String, List<BudgetItem>> groupItemsByMonth(List<BudgetItem> items){
+
+    items.sort((a, b)=> b.dateTime.compareTo(a.dateTime));
+
+
+    final Map<String, List<BudgetItem>> grouped = {};
+
+    for(var item in items){
+
+      String key = "${item.dateTime.year}-${item.dateTime.month.toString().padLeft(2, '0')}";
+
+      if(!grouped.containsKey(key)){
+        grouped[key]=[];
+      }
+
+      grouped[key]!.add(item);
+    }
+
+    return grouped;
   }
 }
