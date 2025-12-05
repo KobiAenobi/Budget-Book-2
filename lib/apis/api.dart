@@ -99,4 +99,28 @@ class Api {
     if (pct < 80) return "warning";
     return "stressed";
   }
+
+
+  //group by months
+
+  static Map<String, List<BudgetItem>> groupItemsByMonth(List<BudgetItem> items){
+
+    items.sort((a, b)=> b.dateTime.compareTo(a.dateTime));
+
+
+    final Map<String, List<BudgetItem>> grouped = {};
+
+    for(var item in items){
+
+      String key = "${item.dateTime.year}-${item.dateTime.month.toString().padLeft(2, '0')}";
+
+      if(!grouped.containsKey(key)){
+        grouped[key]=[];
+      }
+
+      grouped[key]!.add(item);
+    }
+
+    return grouped;
+  }
 }

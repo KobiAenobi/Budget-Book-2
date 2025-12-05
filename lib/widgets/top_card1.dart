@@ -26,9 +26,22 @@ class _TopCard1State extends State<TopCard1> {
     // ---------------------------------------------------------
     // Calculate Grand Total
     // ---------------------------------------------------------
+
+    int currentMonth = DateTime.now().month;
     int grandTotal = 0;
+
+    // final grandTotal = items
+    // .where((item) => item.dateTime.month == currentMonth)
+    // .fold(0, (sum, item) => sum + (item.price * item.quantity));
+
+    // for (var item in items) {
+    //   grandTotal += item.price * item.quantity;
+    // }
+
     for (var item in items) {
-      grandTotal += item.price * item.quantity;
+      if (item.dateTime.month == currentMonth) {
+        grandTotal += item.price * item.quantity;
+      }
     }
     //Top Card Design
     return Container(
@@ -71,7 +84,8 @@ class _TopCard1State extends State<TopCard1> {
                     // color: Colors.red,
                     child: Align(
                       alignment: Alignment.center,
-                      child: FittedBox(child: Center(child: Text("")))),
+                      child: FittedBox(child: Center(child: Text(""))),
+                    ),
                   ),
                 ),
               ],
@@ -80,7 +94,8 @@ class _TopCard1State extends State<TopCard1> {
           Expanded(
             child: Row(
               children: [
-                Container(width: MediaQuery.of(context).size.width*0.65,
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.65,
                   padding: EdgeInsets.all(3),
                   // color: Colors.blue,
                   child: Align(
@@ -102,7 +117,7 @@ class _TopCard1State extends State<TopCard1> {
                 ),
                 Expanded(
                   child: Container(
-                    padding: EdgeInsets.only(top: 12,right: 5),
+                    padding: EdgeInsets.only(top: 12, right: 5),
                     // color: Colors.white,
                     child: Align(
                       alignment: Alignment.centerRight,
@@ -114,7 +129,7 @@ class _TopCard1State extends State<TopCard1> {
                               color: Colors.green,
                               fontFamily: GoogleFonts.poppins().fontFamily,
                               fontWeight: FontWeight.w900,
-                              fontSize: MediaQuery.of(context).size.width*0.1,
+                              fontSize: MediaQuery.of(context).size.width * 0.1,
                             ),
                           ),
                         ),

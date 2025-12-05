@@ -48,7 +48,7 @@ dev_dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/icons/bb_icon_3.png"
+  image_path: "assets/icons/bb_icon_2.png"
 
 flutter:
   assets:

@@ -1,13 +1,11 @@
 import 'dart:developer' show log;
 
-import 'package:budget_book_app/models/budget_item.dart';
 import 'package:budget_book_app/screens/activities.dart';
 import 'package:budget_book_app/screens/homeScreen.dart';
 import 'package:budget_book_app/services/sync_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:hive/hive.dart';
 
 class AccountSettingsDialog {
   final currUser = FirebaseAuth.instance.currentUser;
